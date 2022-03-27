@@ -1,7 +1,7 @@
 #include <iostream>
 
 using namespace std;
-int ways_count(int coins[], int m, int n)
+int ways_count(int S[], int m, int n)
 
 int main()
 {
@@ -19,7 +19,7 @@ int main()
 }
 
 // Number of ways to make N with the sum of the values of the coins
-int ways_count(int coins[], int m, int n)
+int ways_count(int S[], int m, int n)
 {
     // do not include any coin
     if (n == 0)
@@ -35,5 +35,5 @@ int ways_count(int coins[], int m, int n)
         return 0;
 
     // ways_count is sum of solutions (i)
-    return ways_count(coins, m - 1, n) + ways_count(coins, m, n - coins[m - 1]);
+    return ways_count(S, m - 1, n) + ways_count(S, m, n - S[m - 1]);
 }
