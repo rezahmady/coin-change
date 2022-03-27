@@ -13,6 +13,8 @@ int main()
     cout << "Enter N (number) :" << endl;
     cin >> n ;
 
+    cout << "Number of ways to make N with coins = " << ways_count(coins, coins_size, n);
+
     return 0;
 }
 
