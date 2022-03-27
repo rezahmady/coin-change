@@ -6,14 +6,14 @@ int ways_count(int S[], int m, int n)
 int main()
 {
     int n;
-    int coins[] = { 1, 2, 5, 10, 50 };
-    int coins_size = sizeof(coins) / sizeof(coins[0]);
+    int S[] = { 1, 2, 5, 10, 50 };
+    int coins_size = sizeof(S) / sizeof(S[0]);
 
     cout << "Coins = 1, 2, 5, 10, 50" << endl;
     cout << "Enter N (number) :" << endl;
     cin >> n ;
 
-    cout << "Number of ways to make N with coins = " << ways_count(coins, coins_size, n);
+    cout << "Number of ways to make N with coins = " << ways_count(S, coins_size, n);
 
     return 0;
 }
