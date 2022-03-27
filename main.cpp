@@ -1,6 +1,7 @@
 #include <iostream>
 
 using namespace std;
+int ways_count(int coins[], int m, int n)
 
 int main()
 {
@@ -13,4 +14,18 @@ int main()
     cin >> n ;
 
     return 0;
+}
+
+int ways_count(int coins[], int m, int n)
+{
+    if (n == 0)
+        return 1;
+
+    if (n < 0)
+        return 0;
+
+    if (m <= 0)
+        return 0;
+
+    return ways_count(coins, m - 1, n) + ways_count(coins, m, n - coins[m - 1]);
 }
