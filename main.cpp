@@ -1,7 +1,7 @@
 #include <iostream>
 
 using namespace std;
-int ways_count(int S[], int m, int n)
+int ways_count(int S[], int m, int n);
 
 int main()
 {
