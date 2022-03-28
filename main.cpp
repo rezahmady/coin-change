@@ -1,5 +1,9 @@
 #include <iostream>
 
+// Github link :: https://github.com/rezahmady/coin-change-with-cpp/graphs/traffic
+// Reza Ahmadi Sabzevar
+// ahmadireza15@gmail.com
+
 using namespace std;
 int ways_count(int S[], int m, int n);
 
